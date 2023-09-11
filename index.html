@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Brust</title>
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,7 +18,7 @@
 
     <!-- Front Awesome -->
     <script src="https://kit.fontawesome.com/0cf3f8ed25.js" crossorigin="anonymous"></script>
-    
+
 
     <!-- style -->
     <Style>
@@ -26,11 +26,61 @@
             font-family: 'Lato', sans-serif;
         }
     </Style>
+
+    <!-- Custome Color -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                   
+                }
+            }
+        }
+    }
+</script>
 </head>
 
-<body>
+<body class="mx-36 ">
     <!-- Header -->
-    <header>
+    <header class=" ">
+        <nav class="">
+            <div class="navbar bg-red-200">
+                <div class="">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                        <li><a>Item 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="justify-between ">
+                <div class="navbar-center flex bg-black">
+                  <ul class="menu menu-horizontal px-1 flex">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                    <li><a>Item 4</a></li>
+                  </ul>
+                  <div>
+                    <h1>Fruit Burst</h1>
+                  </div>
+                
+                <div class="flex-none gap-2">
+                    <div class="form-control">
+                      <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
 
     </header>
 
