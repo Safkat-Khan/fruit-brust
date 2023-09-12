@@ -45,8 +45,8 @@
 <body class="mx-36 ">
   <!-- Header -->
   <header>
-    <nav class="">
-      <div class="navbar rounded-full bg-red-500 justify-between mt-5">
+    <nav>
+      <div class="navbar rounded-full bg-red-500 justify-between mt-5 ">
         <!-- <div class="">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@
                   </div>
                 </div> -->
 
-        <div class="navbar-center flex  ">
+        <div class="navbar-center flex">
           <ul class="menu menu-horizontal ">
             <li><a class="text-white text-base">Home</a></li>
             <li><a class="text-white text-base">About Us</a></li>
@@ -73,11 +73,17 @@
             <h1 class="text-center text-white font-semibold text-3xl ml-3 mt-3
             ">Fruit Burst</h1>
           </div>
-          <div class="flex-none gap-2 ml-44  ">
-            <div class="form-control w-80 flex flex-row ">
+          <div class="form-control hidden md:block ml-60">
+            <div class=" input-group input-bordered border-2  rounded-full overflow-hidden bg-white h-12">
+              <input type="text" placeholder="Search here" class="input text-black" />
 
-              <input type="text" class=" rounded-full input input-bordered w-80 " placeholder="Search here">
-              <i class="fa-solid fa-magnifying-glass mt-4 -ml-9" style="color: #0c0d0d;"></i>
+              <button class="btn btn-ghost btn-circle hover:bg-transparent">
+                <svg class="text-black w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -85,6 +91,76 @@
   </header>
   <!-- Main -->
   <main class="">
+
+    <!--  -->
+    <section class="mt-9">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn glass btn-circle mt-20">❮</a>
+            <!-- Banner text -->
+            <div class="text-center text-[#FFF]">
+              <h1 class="font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h1>
+              <h3 class="text-xl my-5">We supply highly quality organic products</h3>
+              <button class="btn btn-error text-[#FFF] bg-[#F85559] text-xl">SHOP NOW</button>
+            </div>
+            <a href="#slide2" class="btn glass btn-circle mt-20">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+            <a href="#slide1" class="btn btn-circle mt-20">❮</a>
+            <!-- Banner text -->
+            <div class="text-center text-[#FFF]">
+              <h1 class="font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h1>
+              <h3 class="text-xl my-5">We supply highly quality organic products</h3>
+              <button class="btn btn-error text-[#FFF] bg-[#F85559] text-xl">SHOP NOW</button>
+            </div>
+            <a href="#slide3" class="btn glass btn-circle mt-20">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn glass btn-circle mt-20">❮</a>
+            <!-- Banner text -->
+            <div class="text-center text-[#FFF]">
+              <h1 class="font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h1>
+              <h3 class="text-xl my-5">We supply highly quality organic products</h3>
+              <button class="btn btn-error text-[#FFF] bg-[#F85559] text-xl">SHOP NOW</button>
+            </div>
+            <a href="#slide4" class="btn glass btn-circle mt-20">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn glass btn-circle mt-20">❮</a>
+            <!-- Banner text -->
+            <div class="text-center text-[#FFF]">
+              <h1 class="font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h1>
+              <h3 class="text-xl my-5">We supply highly quality organic products</h3>
+              <button class="btn btn-error text-[#FFF] bg-[#F85559] text-xl">SHOP NOW</button>
+            </div>
+            <a href="#slide1" class="btn glass btn-circle mt-20">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+      </div>
+    </section>
+
+
 
 
   </main>
