@@ -44,45 +44,76 @@
 
 <body>
   <!-- Header -->
-  <header class="mx-36">
+  <header class="mx-36 xl:max-w-screen-lg 2xl:max-w-[1440px]">
     <nav>
-      <div class="navbar rounded-full bg-red-500 justify-between mt-5 ">
-        <!-- <div class="">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 4</a></li>
-                    </ul>
-                  </div>
-                </div> -->
-        <div class="navbar-center flex">
-          <ul class="menu menu-horizontal ">
-            <li><a class="text-white text-base">Home</a></li>
-            <li><a class="text-white text-base">About Us</a></li>
-            <li><a class="text-white text-base">Shop</a></li>
-            <li><a class="text-white text-base">All Fruits</a></li>
-          </ul>
-          <div class="flex ml-40">
-            <img src="images/logo.png" alt="">
-            <h1 class="text-center text-white font-semibold text-3xl ml-3 mt-3
-            ">Fruit Burst</h1>
+      <div
+        class="navbar rounded-full bg-red-500 mt-5 md:flex-row justify-between lg:bg-[#F85559] xl:rounded-full lg:text-white xl:mt-10 xl:h-20 2xl:mt-12 2xl:h-28">
+        <div class="navbar-start w-1/6">
+          <div class="dropdown dropdown-end md:hidden">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruit</a></li>
+            </ul>
           </div>
-          <div class="form-control hidden md:block ml-60">
-            <div class=" input-group input-bordered border-2  rounded-full overflow-hidden bg-white h-12">
-              <input type="text" placeholder="Search here" class="input text-black" />
+          <div class="dropdown hidden md:block lg:hidden">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruit</a></li>
+            </ul>
+          </div>
 
-              <button class="btn btn-ghost btn-circle hover:bg-transparent">
-                <svg class="text-black w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
+        <div class="">
+          <div class="hidden lg:block">
+            <ul class="flex items-center no whitespace-nowrap">
+              <li>
+                <a class="text-base" href="">Home</a>
+              </li>
+              <li>
+                <a class="text-base" href="">About Us</a>
+              </li>
+              <li>
+                <a class="text-base" href="">Shop</a>
+              </li>
+              <li>
+                <a class="text-base" href="">All Fruits</a>
+              </li>
+            </ul>
+          </div>
+         </div>
+          <div class="navbar-center md:gap-16 lg:gap-28 2xl:gap-80">
+            <div class="flex ml-40 justify-between items-center">
+              <img class="w-8 h-9 2xl:w-11 2xl:h-12 ml-2 md:ml-0" src="images/logo.png" alt="">
+              <h1 class="text-center text-white font-semibold text-3xl ml-3 mt-3 lg:text-2xl xl:text-3xl 2xl:text-4xl
+            ">Fruit Burst</h1>
+            </div>
+            <div class="form-control hidden md:block ml-60">
+              <div class=" input-group input-bordered border-2  rounded-full overflow-hidden bg-white h-12">
+                <input type="text" placeholder="Search here" class="input text-black" />
+
+                <button class="btn btn-ghost btn-circle hover:bg-transparent">
+                  <svg class="text-black w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +123,7 @@
   <main class="mx-36">
     <!--Banner Section  -->
     <section class="mt-9 relative">
-      <div class="carousel w-full">
+      <div class="carousel w-full rounded-lg">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="/images/banner1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -161,9 +192,9 @@
     </section>
     <!-- Deal Section -->
 
-    <section>
-      <div class="flex mt-40 justify-between">
-        <div class="">
+    <section class="md:my-28 lg:my-44 2xl:mt-64">
+      <div class="flex mt-40 flex-col lg:flex-row justify-between">
+        <div class="text-center lg:text-left flex-auto mb-5 lg:mb-0">
           <h1 class="text-4xl font-bold mb-7">Deal of the day</h1>
           <h3 class="text-base font-normal">Contrary to popular belief, is not simply random text. It has roots in a
             piece of classical <br> Latin literature
@@ -207,8 +238,9 @@
           </div>
         </div>
       </div>
+
       <!-- Apple Cointainer -->
-      <div class="flex mt-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-14">
         <div class="card w-96 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -482,7 +514,7 @@
       </div>
     </section>
 
-<!--  -->
+    <!--  -->
     <section class="my-10 md:my-28 lg:my-36">
       <div class=" space-y-6">
         <h3 class="text-4xl md:text-5xl font-extrabold text-center">Why Choose Us</h3>
